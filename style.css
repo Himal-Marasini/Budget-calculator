@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Merriweather;
+    text-rendering: optimizeLegibility;
+    font-size: 125.0%;
+}
+
+body {
+    background: #34495e
+}
+
+.container {
+    width: 400px;
+    background: white;
+    margin: 0 auto;
+    border-radius: 4px;
+    text-align: center;
+    padding: 1px;
+    margin-top: 50px;
+}
+
+h3 {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+    color: #212121;
+}
+
+.text,
+.text1 {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 300px;
+    height: 35px;
+    border-radius: 3px;
+    border: 1px solid #bdc3c7;
+    padding-left: 40px;
+}
+
+.repaymentYear {
+    padding-left: 10px;
+}
+
+.btn {
+    margin-bottom: 20px;
+    width: 300px;
+    height: 35px;
+    background-color: #34495e;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.try-again {
+    background-color: #2ecc71;
+    display: none;
+    margin: 0 auto 20px auto;
+}
+
+.inputField,
+.outputField {
+    position: relative;
+}
+
+.firstSpan,
+.secondSpan {
+    font-size: 80%;
+    padding-top: 9px;
+    min-width: 30px;
+    min-height: 33px;
+    background: #ecf0f1;
+    position: absolute;
+    left: 50px;
+    top: 1px;
+    color: #212121;
+    border-radius: 3px 0 0 3px;
+    text-align: center;
+}
+
+img {
+    height: 80px;
+    width: 80px;
+    display: block;
+    margin: 30px auto;
+    display: none;
+    animation: spinny 1.6s linear infinite;
+}
+
+@keyframes spinny {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.outputField {
+    margin-top: 20px;
+    font-size: 70.0%;
+    cursor: context-menu;
+}
+
+.secondSpan {
+    width: auto;
+    padding: 9px 12px;
+
+}
+
+.text1 {
+    padding-left: 130px;
+    padding-bottom: 3px;
+    cursor: context-menu;
+}
+
+.output {
+    display: none;
+}
+
+.error {
+    background: rgba(231, 76, 60, 0.2);
+    border: 2px solid #e74c3c;
+    margin: 0 auto 20px;
+    width: 300px;
+    height: 40px;
+    padding-top: 8px;
+    border-radius: 4px;
+    color: #e74c3c;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: none;
+}
+
+.error p {
+    font-size: 70.9%;
+}

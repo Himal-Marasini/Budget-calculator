@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Budget Calculator</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <h3>Budget Calculator</h3>
+
+        <div class="error">
+            <p>Please check your numbers</p>
+        </div>
+
+        <div class="inputField">
+            <span class="firstSpan">$</span>
+            <input type="text" placeholder="Loan Amount" class="text loanAmount">
+        </div>
+        <div class="inputField">
+            <span class="firstSpan">%</span>
+            <input type="text" placeholder="Annual Interest" class="text annualInterest">
+        </div>
+
+        <input type="text" placeholder="Repayment Year" class="text repaymentYear">
+        <input type="button" value="Calculate" class="btn calculate">
+        <input type="button" value="Try Again" class="btn try-again">
+        <img src="loading.svg" alt="Calculation on Progress">
+
+        <div class="output">
+            <h5>Results</h5>
+            <div class="outputField">
+                <span class="secondSpan">Monthly Payment</span>
+                <input type="text" class="text1 monthlyPayment" readonly="readonly">
+            </div>
+
+            <div class="outputField">
+                <span class="secondSpan">Total Payment</span>
+                <input type="text" class="text1 totalPayment" readonly="readonly">
+            </div>
+            <div class="outputField">
+                <span class="secondSpan">Total Interest</span>
+                <input type="text" class="text1 totalInterest" readonly="readonly">
+            </div>
+        </div>
+    </div>
+
+    <!--<script src="App.js"></script>-->
+    <script src="modularPattern.js"></script>
+</body>
+
+</html>
